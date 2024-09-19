@@ -1,8 +1,8 @@
 services:
   database:
-    image: 'postgres:17rc1'
+    image: 'postgres:16'
     ports:
-      - '5432'
+      - '5432:5432'
     environment:
       - 'POSTGRES_USER=account'
       - 'POSTGRES_DB=money_transfer_db'

@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url=jdbc:postgresql://localhost:5432/money_transfer_db
-    username=account
-    password=password
+    url: jdbc:postgresql://localhost:5432/money_transfer_db
+    username: account
+    password: password
   jpa:
     hibernate:
       ddl-auto: update

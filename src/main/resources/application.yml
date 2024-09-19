@@ -4,5 +4,8 @@ spring:
     name: money-transfer
   profiles:
     active: dev
+  flyway:
+    locations=classpath:db/migration
+    baseline-on-migrate=true
 server:
   port: 8080
