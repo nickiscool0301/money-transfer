@@ -19,6 +19,7 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @Builder
+@RequiredArgsConstructor
 public class Transaction {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -31,4 +32,5 @@ public class Transaction {
 
   @Enumerated(EnumType.STRING)
   private TransactionStatus status;
+  private LocalDateTime scheduleTime;
 }

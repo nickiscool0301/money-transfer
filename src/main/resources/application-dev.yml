@@ -10,3 +10,7 @@ spring:
   docker:
     compose:
       file: src/main/java/com/money/transfer/money_transfer/docker/docker-compose.yaml
+
+scheduled:
+  transaction:
+    rate: 60000
